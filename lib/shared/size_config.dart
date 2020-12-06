@@ -21,7 +21,7 @@ class SizeConfig{
 double getProportionateScreenHeight(double inputHeight) {
   double screenHeight = SizeConfig.screenHeight;
  //812 adalah nilai pada tinggi desain 
-  return (inputHeight / 812.0) * screenHeight;
+  return (inputHeight / 1020.0) * screenHeight;
 }
 
 //untuk hasil proporsional

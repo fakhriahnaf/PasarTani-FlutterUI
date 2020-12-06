@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pasarTani/pages/sign-in/sign-in-form.dart';
+import 'package:pasarTani/pages/sign-up/sign-up.dart';
 import 'package:pasarTani/shared/constraint.dart';
 //import 'package:flutter_svg/flutter_svg.dart';
 
@@ -75,7 +76,9 @@ class NoAccountText extends StatelessWidget {
           style: TextStyle(fontSize: getProportionateScreenWidth(16)),
         ),
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, SignUpScreen.routeName);
+          },
           child: Text(
             "signUp",
             style: TextStyle(
